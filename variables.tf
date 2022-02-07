@@ -13,7 +13,7 @@ variable "random_cluster_suffix" {
 variable "do_token" {
   description = "Digital Ocean Personal access token"
   type        = string
-  default     = ""
+  sensitive   = true
 }
 
 variable "do_region" {
